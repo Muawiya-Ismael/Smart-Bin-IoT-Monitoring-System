@@ -7,7 +7,6 @@ import os
 
 app = FastAPI()
 
-# Enable CORS for all origins
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  
@@ -16,17 +15,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# MongoDB connection
 MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017")
 client = MongoClient(MONGO_URI)
-db = client.SmartBinDB  # Make sure this matches your DB name
+db = client.SmartBinDB  
 
-# Helper to convert ObjectId to string
 def serialize_doc(doc: dict) -> dict:
     doc["_id"] = str(doc["_id"])
     return doc
 
-# General function to fetch from any collection safely
 def fetch_collection(
     collection_name: str, sort_field: Optional[str], limit: int
 ) -> List[dict]:
@@ -35,11 +31,10 @@ def fetch_collection(
     
     collection = db[collection_name]
     
-    # Check if sort_field exists in at least one document
     if sort_field:
         sample_doc = collection.find_one({sort_field: {"$exists": True}})
         if not sample_doc:
-            sort_field = None  # Don't sort if field doesn't exist
+            sort_field = None  
     
     if sort_field:
         docs = list(collection.find().sort(sort_field, -1).limit(limit))
@@ -48,7 +43,6 @@ def fetch_collection(
     
     return [serialize_doc(d) for d in docs]
 
-# API endpoints
 @app.get("/api/readings")
 def get_readings(limit: int = 50):
     return fetch_collection("capacity_updates", "timestamp", limit)
@@ -61,7 +55,6 @@ def get_alerts(limit: int = 20):
 def get_reports(limit: int = 20):
     return fetch_collection("minute_reports", "report_generated_at", limit)
 
-# Run with: uvicorn api:app --reload --host 0.0.0.0 --port 5000
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=5000)
