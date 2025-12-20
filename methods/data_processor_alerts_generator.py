@@ -25,6 +25,8 @@ def process_and_store_data(data_payload):
         
         if bin_id not in bin_full_state:
             bin_full_state[bin_id] = False
+
+        receibed_at = reading['received_at'] + datetime.timedelta(hours=2)
         
         if capacity >= CAPACITY_THRESHOLD:
             if not bin_full_state[bin_id]:
@@ -34,7 +36,7 @@ def process_and_store_data(data_payload):
                     "bin_id": bin_id,
                     "status": "BIN_FULL_ALERT",
                     "capacity": capacity,
-                    "alert_timestamp": reading['received_at'],
+                    "alert_timestamp":  receibed_at,
                     "message": f"Bin {bin_id} has reached {capacity}% capacity."
                 }
                 alerts_col.insert_one(report_doc)
@@ -47,7 +49,7 @@ def process_and_store_data(data_payload):
                 "bin_id": bin_id,
                 "status": "BIN_EMPTIED_ALERT",
                 "capacity": capacity,
-                "alert_timestamp": reading['received_at'],
+                "alert_timestamp": receibed_at,
                 "message": f"Bin {bin_id} has been emptied (capacity now {capacity}%)."
             }
             alerts_col.insert_one(report_doc)

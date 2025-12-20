@@ -4,7 +4,7 @@ type Reading = {
   _id: string;
   bin_id: string;
   capacity_percent: number;
-  timestamp: string;
+  sensor_timestamp: string;
 };
 
 type Report = {
@@ -86,23 +86,30 @@ export default function App() {
           <div className="text-slate-400 italic">No active alerts</div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-            {alerts.map(alert => (
-              <div
-                key={alert._id}
-                className="rounded-2xl bg-red-950/40 border border-red-800 p-5 shadow-lg"
-              >
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-red-400 font-semibold">{alert.status}</span>
-                  <span className="text-xs text-slate-400">
-                    {new Date(alert.alert_timestamp).toLocaleString()}
-                  </span>
+            {alerts.map(alert => {
+              // Determine color classes based on alert type
+              const isEmptied = alert.status === "BIN_EMPTIED_ALERT";
+              const isFull = alert.status === "BIN_FULL_ALERT";
+              const cardBg = isEmptied ? "bg-emerald-950/40 border-emerald-800" : isFull ? "bg-red-950/40 border-red-800" : "bg-slate-800 border-slate-700";
+              const statusText = isEmptied ? "text-emerald-400" : isFull ? "text-red-400" : "text-slate-400";
+              return (
+                <div
+                  key={alert._id}
+                  className={`rounded-2xl ${cardBg} border p-5 shadow-lg`}
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <span className={`${statusText} font-semibold`}>{alert.status}</span>
+                    <span className="text-xs text-slate-400">
+                      {new Date(alert.alert_timestamp).toLocaleString()}
+                    </span>
+                  </div>
+                  <p className="font-medium mb-1">{alert.message}</p>
+                  <p className="text-sm text-slate-400">
+                    Bin <span className="font-semibold">{alert.bin_id}</span> · Capacity {alert.capacity}%
+                  </p>
                 </div>
-                <p className="font-medium mb-1">{alert.message}</p>
-                <p className="text-sm text-slate-400">
-                  Bin <span className="font-semibold">{alert.bin_id}</span> · Capacity {alert.capacity}%
-                </p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
       </section>
@@ -142,7 +149,7 @@ export default function App() {
                     </div>
                   </td>
                   <td className="px-4 py-3 text-slate-400">
-                    {new Date(r.timestamp).toLocaleString()}
+                    {new Date(r.sensor_timestamp).toLocaleString()}
                   </td>
                 </tr>
               ))}
@@ -166,6 +173,7 @@ export default function App() {
                 <th className="px-4 py-3">Full Duration</th>
                 <th className="px-4 py-3">Last Emptied</th>
                 <th className="px-4 py-3">Readings</th>
+                <th className="px-4 py-3">Report Start</th>
                 <th className="px-4 py-3">Report End</th>
               </tr>
             </thead>
@@ -186,6 +194,9 @@ export default function App() {
                       : "—"}
                   </td>
                   <td className="px-4 py-3 text-center">{r.readings_count}</td>
+                  <td className="px-4 py-3 text-center text-slate-400">
+                    {new Date(r.report_start_time).toLocaleString()}
+                  </td>
                   <td className="px-4 py-3 text-center text-slate-400">
                     {new Date(r.report_end_time).toLocaleString()}
                   </td>

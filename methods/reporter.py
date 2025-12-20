@@ -66,11 +66,15 @@ def generate_minute_reports():
 
                 metrics = calculate_bin_metrics(bid, readings_with_sentinel)
                 if metrics:
+                    # Add two hours to the times
+                    report_start_time_plus2 = minute_start + datetime.timedelta(hours=2)
+                    report_end_time_plus2 = minute_end + datetime.timedelta(hours=2)
+                    report_generated_at_plus2 = metrics['report_generated_at'] + datetime.timedelta(hours=2)
                     report_doc = {
                         'bin_id': bid,
-                        'report_start_time': minute_start,
-                        'report_end_time': minute_end,
-                        'report_generated_at': metrics['report_generated_at'],
+                        'report_start_time': report_start_time_plus2,
+                        'report_end_time': report_end_time_plus2,
+                        'report_generated_at': report_generated_at_plus2,
                         'capacity_avg_percent': metrics['avg_capacity'],
                         'capacity_max_percent': metrics['max_capacity'],
                         'capacity_min_percent': metrics['min_capacity'],
@@ -79,7 +83,7 @@ def generate_minute_reports():
                         'last_emptied_time': metrics['last_freed_time'],
                         'max_full_duration_seconds': int(metrics.get('max_full_duration_seconds', 0)),
                     }
-                    reports_col.update_one({'bin_id': bid, 'report_start_time': minute_start}, {'$set': report_doc}, upsert=True)
+                    reports_col.update_one({'bin_id': bid, 'report_start_time': report_start_time_plus2}, {'$set': report_doc}, upsert=True)
                     generated_reports.append(report_doc)
             
             if generated_reports:

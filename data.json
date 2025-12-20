@@ -10,14 +10,44 @@
         "timestamp": "2025-12-08T11:00:00Z"
     },
     {
+        "bin_id": "BIN-4",
+        "capacity_percent": 0,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
         "bin_id": "BIN-1",
         "capacity_percent": 100,
         "timestamp": "2025-12-08T12:00:00Z"
     },
-     {
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 0,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
         "bin_id": "BIN-2",
         "capacity_percent": 0,
         "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 15,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 0,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 20,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 25,
+        "timestamp": "2025-12-08T11:00:00Z"
     },
     {
         "bin_id": "BIN-1",
@@ -30,68 +60,448 @@
         "timestamp": "2025-12-08T14:00:00Z"
     },
     {
+        "bin_id": "BIN-5",
+        "capacity_percent": 30,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 40,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
         "bin_id": "BIN-1",
         "capacity_percent": 40,
         "timestamp": "2025-12-08T15:00:00Z"
     },
-     {
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 40,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
         "bin_id": "BIN-2",
         "capacity_percent": 50,
         "timestamp": "2025-12-08T12:10:00Z"
     },
-     {
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 60,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 60,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 10,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 80,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
         "bin_id": "BIN-1",
         "capacity_percent": 100,
         "timestamp": "2025-12-08T16:00:00Z"
+    },
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 80,
+        "timestamp": "2025-12-08T12:10:00Z"
     },
     {
         "bin_id": "BIN-1",
         "capacity_percent": 100,
         "timestamp": "2025-12-08T17:00:00Z"
     },
-     {
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 95,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
         "bin_id": "BIN-2",
         "capacity_percent": 75,
         "timestamp": "2025-12-08T12:10:00Z"
     },
-     {
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
         "bin_id": "BIN-1",
         "capacity_percent": 100,
         "timestamp": "2025-12-08T16:00:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 20,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T11:00:00Z"
     },
     {
         "bin_id": "BIN-1",
         "capacity_percent": 100,
         "timestamp": "2025-12-08T17:00:00Z"
     },
-     {
+    {
         "bin_id": "BIN-2",
         "capacity_percent": 100,
         "timestamp": "2025-12-08T12:10:00Z"
     },
-     {
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 30,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
         "bin_id": "BIN-1",
         "capacity_percent": 100,
         "timestamp": "2025-12-08T16:00:00Z"
+    },
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 0,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T11:00:00Z"
     },
     {
         "bin_id": "BIN-1",
         "capacity_percent": 100,
         "timestamp": "2025-12-08T17:00:00Z"
     },
-     {
+    {
         "bin_id": "BIN-1",
         "capacity_percent": 100,
         "timestamp": "2025-12-08T16:00:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 20,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 40,
+        "timestamp": "2025-12-08T12:10:00Z"
     },
     {
         "bin_id": "BIN-1",
         "capacity_percent": 100,
         "timestamp": "2025-12-08T17:00:00Z"
     },
-     {
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 0,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 50,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 40,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 15,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
         "bin_id": "BIN-2",
         "capacity_percent": 100,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 60,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 30,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 60,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 0,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 45,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 70,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 5,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 80,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 90,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 60,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 20,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 88,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 0,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 40,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 12,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 40,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 16,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 20,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 60,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 40,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 35,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 90,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 46,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 40,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 40,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 56,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 40,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 60,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 75,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 50,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 0,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 10,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 100,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-4",
+        "capacity_percent": 55,
+        "timestamp": "2025-12-08T12:10:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 0,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-5",
+        "capacity_percent": 35,
+        "timestamp": "2025-12-08T11:00:00Z"
+    },
+    {
+        "bin_id": "BIN-3",
+        "capacity_percent": 0,
         "timestamp": "2025-12-08T12:10:00Z"
     }
 ]
